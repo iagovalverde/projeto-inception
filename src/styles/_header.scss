@@ -1,0 +1,29 @@
+.header {
+    background-color: #222021;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding: 16px 0;
+
+        &__title {
+            margin: 0 60px;
+            font-size: 56px;
+            color: #D81A24;
+        }
+
+        &__subtitle {
+            display: block;
+            max-width: 180px;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        &__img {
+            margin: 0 24px;
+            height: 80px;
+        }
+    }
+}

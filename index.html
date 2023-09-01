@@ -7,6 +7,46 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <h1>Ola, mundo!</h1>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__container__title">INCEPTION</h1>
+            <h2 class="header__container__subtitle">From the director of The dark night</h2>
+            <img class="header__container__img" src="src/images/piao.gif" alt="">
+            <h2 class="header__container__subtitle">Music composed by Hans Zimmer</h2>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="slides">
+            <input class="slides__input" type="radio" name="radio-btn" id="radio1">
+            <input class="slides__input" type="radio" name="radio-btn" id="radio2">
+            <input class="slides__input" type="radio" name="radio-btn" id="radio3">
+            <input class="slides__input" type="radio" name="radio-btn" id="radio4">
+            <div class="slides__slide first">
+                <img src="src/images/foto1.png" alt="">
+            </div>
+            <div class="slides__slide ">
+                <img src="src/images/foto2.png" alt="">
+            </div>
+            <div class="slides__slide">
+                <img src="src/images/foto3.png" alt="">
+            </div>
+            <div class="slides__slide">
+                <img src="src/images/foto4.png" alt="">
+            </div>
+            <div class="slides__navigation">
+                <div class="slides__navigation__btn1"></div>
+                <div class="slides__navigation__btn2"></div>
+                <div class="slides__navigation__btn3"></div>
+                <div class="slides__navigation__btn4"></div>
+            </div>
+        </div>
+        <div class="manual__navigation">
+            <label class="manual__navigation__btn" for="radio1"></label>
+            <label class="manual__navigation__btn" for="radio2"></label>
+            <label class="manual__navigation__btn" for="radio3"></label>
+            <label class="manual__navigation__btn" for="radio4"></label>
+        </div>
+    </div>
+
 </body>
 </html>
