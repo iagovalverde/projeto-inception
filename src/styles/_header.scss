@@ -1,29 +1,33 @@
 .header {
-    background-color: #222021;
+    background-color: #221f20;
 
     &__container {
         display: flex;
-        justify-content: center;
-        align-items: end;
-        padding: 16px 0;
+        justify-content: space-between;
 
         &__title {
-            margin: 0 60px;
+            margin: 24px;
             font-size: 56px;
             color: #D81A24;
         }
 
-        &__subtitle {
-            display: block;
-            max-width: 180px;
-            color: #fff;
-            font-size: 16px;
-            text-transform: uppercase;
-        }
+        &__subtitles {
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+            padding-bottom: 6px;
 
-        &__img {
-            margin: 0 24px;
-            height: 80px;
+            &__subtitle {
+                max-width: 200px;
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+    
+            &__img {
+                height: 80px;
+                padding: 0 24px;
+            }
         }
     }
 }

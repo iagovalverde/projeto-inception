@@ -1,5 +1,8 @@
 @use 'header';
 @use 'slider';
+@use 'cast';
+@use 'card';
+@use 'form';
 
 * {
     margin: 0;
@@ -9,4 +12,10 @@
 
 body {
     background-color: #000216;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
 }

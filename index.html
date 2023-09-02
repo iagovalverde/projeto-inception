@@ -7,46 +7,92 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-            <h1 class="header__container__title">INCEPTION</h1>
-            <h2 class="header__container__subtitle">From the director of The dark night</h2>
-            <img class="header__container__img" src="src/images/piao.gif" alt="">
-            <h2 class="header__container__subtitle">Music composed by Hans Zimmer</h2>
-        </div>
-    </header>
-    <div class="slider">
-        <div class="slides">
-            <input class="slides__input" type="radio" name="radio-btn" id="radio1">
-            <input class="slides__input" type="radio" name="radio-btn" id="radio2">
-            <input class="slides__input" type="radio" name="radio-btn" id="radio3">
-            <input class="slides__input" type="radio" name="radio-btn" id="radio4">
-            <div class="slides__slide first">
-                <img src="src/images/foto1.png" alt="">
+    <div class="container">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__container__title">INCEPTION</h1>
+                <div class="header__container__subtitles">
+                    <h2 class="header__container__subtitles__subtitle">From the director of The dark night</h2>
+                    <img class="header__container__subtitles__img" src="src/images/piao.gif" alt="">
+                    <h2 class="header__container__subtitles__subtitle">Music composed by Hans Zimmer</h2>
+                </div>
             </div>
-            <div class="slides__slide ">
-                <img src="src/images/foto2.png" alt="">
+        </header>
+        <section class="slider">
+            <div class="slides">
+                <input class="slides__input" type="radio" name="radio-btn" id="radio1">
+                <input class="slides__input" type="radio" name="radio-btn" id="radio2">
+                <input class="slides__input" type="radio" name="radio-btn" id="radio3">
+                <input class="slides__input" type="radio" name="radio-btn" id="radio4">
+                <div class="slides__slide first">
+                    <img src="src/images/foto1.png" alt="">
+                </div>
+                <div class="slides__slide ">
+                    <img src="src/images/foto2.png" alt="">
+                </div>
+                <div class="slides__slide">
+                    <img src="src/images/foto3.png" alt="">
+                </div>
+                <div class="slides__slide">
+                    <img src="src/images/foto4.png" alt="">
+                </div>
+                <div class="slides__navigation">
+                    <div class="btn1"></div>
+                    <div class="btn2"></div>
+                    <div class="btn3"></div>
+                    <div class="btn4"></div>
+                </div>
             </div>
-            <div class="slides__slide">
-                <img src="src/images/foto3.png" alt="">
+            <div class="manual__navigation">
+                <label class="manual__navigation__btn" for="radio1"></label>
+                <label class="manual__navigation__btn" for="radio2"></label>
+                <label class="manual__navigation__btn" for="radio3"></label>
+                <label class="manual__navigation__btn" for="radio4"></label>
             </div>
-            <div class="slides__slide">
-                <img src="src/images/foto4.png" alt="">
-            </div>
-            <div class="slides__navigation">
-                <div class="slides__navigation__btn1"></div>
-                <div class="slides__navigation__btn2"></div>
-                <div class="slides__navigation__btn3"></div>
-                <div class="slides__navigation__btn4"></div>
-            </div>
-        </div>
-        <div class="manual__navigation">
-            <label class="manual__navigation__btn" for="radio1"></label>
-            <label class="manual__navigation__btn" for="radio2"></label>
-            <label class="manual__navigation__btn" for="radio3"></label>
-            <label class="manual__navigation__btn" for="radio4"></label>
-        </div>
-    </div>
+        </section>
+        <main>
+            <section class="cast">
+                <h3 class="cast__title">The dream is real</h3>
+                <div class="cast__container">
+                    <p class="cast__container__star">Leonardo DiCaprio</p>
+                    <p class="cast__container__star">Joseph Gordon-Levitt</p>
+                    <p class="cast__container__star">Elliot Page</p>
+                    <p class="cast__container__star">Ken Watanabe</p>
+                    <p class="cast__container__star">Tom Hardy</p>
+                    <p class="cast__container__star">Dileep Rao</p>
+                    <p class="cast__container__star">Cillian Murphy</p>
+                    <p class="cast__container__star">Tom Berenger</p>
+                    <p class="cast__container__star">Marion Cotillard</p>
+                    <p class="cast__container__star">Pete Postlethwaite</p>
+                    <p class="cast__container__star">Michael Caine</p>
+                    <p class="cast__container__star">Lukas Haas</p>
+                </div>
+            </section>
+            <section class="card">
+                <div class="card__content">
+                    <h3 class="card__content__title">INCEPTION</h3>
+                    <p class="card__content__synopsis">
+                        Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable. Cobb's rare ability has made him a coveted player in this treacherous new world of corporate espionage, but it has also made him an international fugitive and cost him everything he has ever loved. Now Cobb is being offered a chance at redemption. One last job could give him his life back but only if he can accomplish the impossible, inception. Instead of the perfect heist, Cobb and his team of specialists have to pull off the reverse: their task is not to steal an idea, but to plant one. If they succeed, it could be the perfect crime. But no amount of careful planning or expertise can prepare the team for the dangerous enemy that seems to predict their every move. An enemy that only Cobb could have seen coming.
+                    </p>
+                    <a class="card__content__download" href="#">Download</a>
+                </div>
+                <div class="card__visual">
+                    <img class="card__visual__img" src="src/images/card.jpg" alt="" />
+                </div>
+            </section>
+            <section class="form">
+                <h3 class="form__title">Receive free movies</h3>
+                <form class="form__container">
+                    <input class="form__container__input" type="text" placeholder="Name" required>
+                    <input class="form__container__input" type="email" placeholder="E-mail" required>
+                    <button class="form__container__btn" type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
 
+        </footer>
+    </div>
+    <script src="src/scripts/main.js"></script>
 </body>
 </html>
