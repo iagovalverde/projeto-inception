@@ -1,52 +1,99 @@
+@use 'variables';
+
 .form {
-    width: 360px;
-    margin: 24px auto;
-    padding: 24px;
-    background-color: #1CB5E0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: variables.$headerBackground;
     border-radius: 16px;
 
-    &__title {
-        width: 80%;
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 90%;
+        margin: 84px auto;
+    }
+
+    @media (max-width: 768px) {
         margin: 0 auto;
-        padding: 8px;
-        font-size: 24px;
-        text-transform: uppercase;
-        text-align: center;
-        color: #fff;
-        background-color: #000046;
-        border-radius: 15px;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+        padding: 0;
+        height: 250px;
+        border-radius: 0 16px 16px 0;
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            height: 40vh;
+            width: 50vw;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            border-radius: 0 0 16px 16px;
+        }
     }
 
     &__container {
-        padding: 1em;
+        margin: 0 auto;
+        padding: 8px;
         text-align: center;
         border-radius: 16px;
 
-        &__input {
-            display: block;
-            width: 100%;
+        &__title {
+            width: 20vw;
             margin: 8px auto;
             padding: 8px;
-            font-size: 16px;
-            background-color: #dfdfdf;
+            font-size: 24px;
+            text-transform: uppercase;
+            text-align: center;
+            color: variables.$titleColor;
             border-radius: 15px;
-            border: 3px solid #f2f2f2;
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                width: 95%;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        &__input {
+            width: 80%;
+            margin: 2px auto;
+            padding: 8px;
+            font-size: 16px;
+            background-color: variables.$borderColor;
+            border-radius: 15px;
+            border: 3px solid variables.$borderColor;
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                width: 90%;
+            }
         }
 
         &__btn {
-            width: 160px;
-            padding: 12px;
-            margin-top: 8px;
+            width: 10vw;
+            margin: 8px;
+            padding: 8px;
+            font-size: 16px;
             font-weight: bold;
             text-transform: uppercase;
+            border: 3px solid variables.$borderColor;
+            border-radius: 12px;
+            background-color: transparent;
             color: #fff;
-            background-color: #000216;
-            border: none;
-            border-radius: 15px;
             cursor: pointer;
+            transition: 400ms all;
+
+            @media (max-width: 768px) {
+                width: 50%;
+            }
 
             &:hover {
-                background: lighten(#000216, 5%);
+                background: variables.$mainBackground;
+                color: #fff;
             }
         }
     }

@@ -1,5 +1,4 @@
 .cast {
-
     &__title {
         padding: 32px;
         text-align: center;
@@ -34,6 +33,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 16px;
         padding: 0 0 32px 0;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
 
         &__star {
             margin: 0 auto;

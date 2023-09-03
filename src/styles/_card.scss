@@ -1,47 +1,77 @@
+@use 'variables';
+
 .card {
-    background: #000046;
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046); 
-    background: linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to right, variables.$cardFirstColor, variables.$cardSecondColor);
     border-radius: 24px 24px 24px 48px;
     padding: 48px 48px 48px 308px;
     margin: 84px 0;
-    min-width: 640px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-self: flex-start;
     position: relative;
-    
 
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 90%;
+        margin: 84px auto;
+    }
+
+    @media (max-width: 768px) {
+        width: 80%;
+        margin: 64px auto;
+        padding: 16px;
+        flex-direction: column;
+        border-radius: 24px;   
+    }
+    
     &__content {
         display: flex;
         flex-direction: column;
         width:calc(60vw - 192px);
+
+        @media (max-width: 768px) {
+            width: 55%;
+            
+        }
 
         &__title {
             margin: 0;
             font-size: 1.5em;
             max-width: 20ch;
             color: #fff;
+
+            @media (max-width: 768px) {
+                max-width:calc(100% - 150px);
+                font-size: 1em; 
+            }
         }
 
         &__synopsis {
             text-align: justify;
             margin: 25px 0 24px;
             color: #fff;
+
+            @media (max-width: 768px) {
+                font-size: 0.8em;
+            }
         }
 
         &__download {
-            border: 3px solid #f2f2f2;
-            color: #ffffff;
+            border: 3px solid variables.$borderColor;
+            color: #fff;
             align-self: flex-start;
             text-decoration: none;
             padding: 16px 32px;
             border-radius: 12px;
             transition: 400ms all;
 
+            @media (max-width: 768px) {
+                font-size: 0.8em;
+            }
+
             &:hover {
-                background: #000216;
-                color: white;
+                background: variables.$mainBackground;
+                color: #fff;
             }
         }
     }
@@ -55,8 +85,21 @@
         overflow: hidden;
         border-radius: 24px;
 
+        @media (max-width: 768px) {
+            width: 100px;
+            height: 250px;
+            right: 16px;
+            left: auto;
+            border-radius: 24px 24px;
+        }
+
         &__img {
             height: 110%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }

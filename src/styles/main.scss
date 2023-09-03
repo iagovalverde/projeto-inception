@@ -1,8 +1,10 @@
+@use 'variables';
 @use 'header';
 @use 'slider';
 @use 'cast';
 @use 'card';
 @use 'form';
+@use 'footer';
 
 * {
     margin: 0;
@@ -11,7 +13,8 @@
 }
 
 body {
-    background-color: #000216;
+    background-color: variables.$mainBackground;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
